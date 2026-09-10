@@ -14,19 +14,14 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-#include "stdafx.h"
 
 #include "TestHelper/TemporaryPath.hpp"
 #include "TestHelper/Tools.hpp"
-
 #include "Plugin/Exporter/IExportPlugin.hpp"
-
 #include "Exporter/Plugin/ExporterPluginManager.hpp"
 #include "Exporter/Plugin/IPluginLoader.hpp"
 #include "Exporter/Plugin/LoadedPlugin.hpp"
-
 #include "Plugin/Exporter/CoverageData.hpp"
-
 #include "Tools/Tool.hpp"
 
 using testing::_;

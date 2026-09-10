@@ -16,6 +16,8 @@
 
 #pragma once
 
+#include "VcovConfig.h"
+
 #define WIN32_LEAN_AND_MEAN
 // Windows Headers
 #include <windows.h>
@@ -28,6 +30,13 @@
 #include <functional>
 #include <optional>
 #include <map>
+#include <fstream>
+#include <tchar.h>
 #include <stdexcept>
 
 // Boost Headers
+
+#if VCOV_BUILD_TESTS
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
+#endif

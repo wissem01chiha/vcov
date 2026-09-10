@@ -16,8 +16,7 @@
 
 #include "MappedFile.hpp"
 #include "TemporaryPath.hpp"
-#include "stdafx.h"
-#include <fstream>
+#include "CommonPCH.h"
 
 namespace ToolsTests
 {

@@ -16,11 +16,9 @@
 
 #pragma once
 
-#include <filesystem>
-#include <string>
-#include <vector>
+#include "ConsolePCH.h"
 
-namespace OpenCppCoverageTest
+namespace VcovTest
 {
     void AddDefaultFilters(std::vector<std::pair<std::string, std::string>>& coverageArguments,
                            const std::filesystem::path&                      programToRun);
@@ -37,4 +35,5 @@ namespace OpenCppCoverageTest
                        std::string* optionalOutput = nullptr);
 
     std::string GetSolutionFolderName();
-} // namespace OpenCppCoverageTest
+
+} // namespace VcovTest

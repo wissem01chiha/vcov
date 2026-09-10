@@ -33,3 +33,8 @@
 // Boost Headers
 #include <boost/optional.hpp>
 #include <boost/container/small_vector.hpp>
+
+#if VCOV_BUILD_TESTS
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
+#endif

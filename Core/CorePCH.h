@@ -32,3 +32,8 @@
 // Boost Headers
 #include <boost/algorithm/string.hpp>
 #include <boost/optional.hpp>
+
+#if VCOV_BUILD_TESTS
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
+#endif

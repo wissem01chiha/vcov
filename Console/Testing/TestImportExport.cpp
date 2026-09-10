@@ -14,25 +14,18 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-#include "stdafx.h"
-
-#include <filesystem>
+#include "ConsolePCH.h"
 
 #include "TestCoverageConsole/TestCoverageConsole.hpp"
 #include "TestHelper/TemporaryPath.hpp"
-
 #include "CppCoverage/ExportOptionParser.hpp"
 #include "CppCoverage/OptionsParser.hpp"
 #include "CppCoverage/ProgramOptions.hpp"
 #include "Plugin/Exporter/CoverageData.hpp"
-
 #include "Exporter/binary/CoverageDataDeserializer.hpp"
-
 #include "TestCoverageSharedLib/TestCoverageSharedLib.hpp"
 #include "TestHelper/CoverageDataComparer.hpp"
-
 #include "Tools/Tool.hpp"
-
 #include "OpenCppCoverageTestTools.hpp"
 
 namespace fs  = std::filesystem;
@@ -123,4 +116,5 @@ namespace OpenCppCoverageTest
         RunCoverage({ BuildExportTypeString(pluginName, output) }, output);
         ASSERT_NE(0, std::filesystem::file_size(output));
     }
+    
 } // namespace OpenCppCoverageTest

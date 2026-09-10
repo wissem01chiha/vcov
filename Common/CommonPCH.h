@@ -16,6 +16,8 @@
 
 #pragma once
 
+#include "VcovConfig.h"
+
 #define WIN32_LEAN_AND_MEAN // Exclude rarely-used stuff from Windows headers
 // Windows Header Files:
 #include <windows.h>
@@ -24,7 +26,11 @@
 #include <filesystem>
 #include <memory>
 #include <string>
+#include <fstream>
+#include <tchar.h>
 #include <vector>
+#include <iosfwd>
+#include <set>
 #include <iostream>
 #include <functional>
 
@@ -41,3 +47,8 @@
 #include <boost/optional/optional.hpp>
 #include <boost/algorithm/string.hpp>
 #include <boost/iostreams/device/mapped_file.hpp>
+
+#if VCOV_BUILD_TESTS
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
+#endif

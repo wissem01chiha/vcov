@@ -16,8 +16,18 @@
 
 #pragma once
 
+#include "VcovConfig.h"
+
 #define NOMINMAX
 #include <windows.h>
 
 #include <iosfwd>
 #include <iostream>
+#include <filesystem>
+#include <string>
+#include <vector>
+
+#if VCOV_BUILD_TESTS
+#include <gmock/gmock.h>
+#include <gtest/gtest.h>
+#endif

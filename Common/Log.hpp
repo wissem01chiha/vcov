@@ -18,8 +18,6 @@
 
 #include "CommonExport.h"
 #include "CommonPCH.h"
-#include <iosfwd>
-#include <set>
 
 // Define the logger
 BOOST_LOG_INLINE_GLOBAL_LOGGER_DEFAULT(

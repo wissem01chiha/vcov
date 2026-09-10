@@ -14,10 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-#include "stdafx.h"
-#include <tchar.h>
-
-#include "Tools/Log.hpp"
+#include "ExportPCH.h"
+#include "Log.hpp"
 
 //-----------------------------------------------------------------------------
 int _tmain(int argc, _TCHAR* argv[])

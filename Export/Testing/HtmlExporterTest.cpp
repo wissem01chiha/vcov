@@ -14,21 +14,13 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-#include "stdafx.h"
-
 #include "Plugin/Exporter/CoverageData.hpp"
 #include "Plugin/Exporter/FileCoverage.hpp"
 #include "Plugin/Exporter/ModuleCoverage.hpp"
 #include "TestHelper/TemporaryPath.hpp"
-
-#include <filesystem>
-#include <fstream>
-
 #include "Exporter/Html/HtmlExporter.hpp"
 #include "Exporter/Html/HtmlFolderStructure.hpp"
-
 #include "TestHelper/TemporaryPath.hpp"
-
 #include "Tools/Tool.hpp"
 
 namespace fs = std::filesystem;

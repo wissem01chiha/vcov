@@ -15,15 +15,17 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-option(VCOV_BUILD_TESTS "Build unit tests" ON)
-option(VCOV_BUILD_EXAMPLES "Build example programs" OFF)
-option(VCOV_INSTALL "Enable installation targets" ON)
-option(BUILD_SHARED_LIBS "Build shared libraries" ON)
-option(VCOV_ASAN "Enable AddressSanitizer (ASan)" OFF)
-option(VCOV_MSAN "Enable MemorySanitizer (MSan)" OFF)
-option(VCOV_UBSAN "Enable UndefinedBehaviorSanitizer (UBSan)" OFF)
-
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/CMake")
+
+include(Option)
+
+vcov_option(VCOV_BUILD_TESTS "Build unit tests" ON)
+vcov_option(VCOV_BUILD_EXAMPLES "Build example programs" OFF)
+vcov_option(VCOV_INSTALL "Enable installation targets" ON)
+vcov_option(BUILD_SHARED_LIBS "Build shared libraries" ON)
+vcov_option(VCOV_ASAN "Enable AddressSanitizer (ASan)" OFF)
+vcov_option(VCOV_MSAN "Enable MemorySanitizer (MSan)" OFF)
+vcov_option(VCOV_UBSAN "Enable UndefinedBehaviorSanitizer (UBSan)" OFF)
 
 include(Module)
 include(Sanitizer)
@@ -56,13 +58,8 @@ find_package(Protobuf CONFIG REQUIRED)
 find_package(CTemplate REQUIRED)
 find_package(Poco REQUIRED COMPONENTS Foundation)
 
-if(BUILD_SHARED_LIBS)
-    set(BUILD_SHARED_LIBS 1)
-else()
-    set(BUILD_SHARED_LIBS 0)
-endif()
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/VcovExport.h.in 
-    ${CMAKE_CURRENT_BINARY_DIR}/VcovExport.h
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/VcovConfig.h.in 
+    ${CMAKE_CURRENT_BINARY_DIR}/VcovConfig.h
 )
 
 if(VCOV_BUILD_TESTS)

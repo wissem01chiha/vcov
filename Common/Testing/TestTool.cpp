@@ -15,7 +15,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "Tool.hpp"
-#include "stdafx.h"
+#include "CommonPCH.h"
 
 namespace Tools
 {
@@ -38,7 +38,7 @@ namespace Tools
     }
 
     //---------------------------------------------------------------------
-    TEST(Tool, Uft8)
+    TEST(Tool, Utf8)
     {
         ASSERT_EQ(L"���", Tools::Utf8ToWString(Tools::ToUtf8String(L"���")));
     }

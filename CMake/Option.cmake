@@ -1,0 +1,8 @@
+macro(vcov_option name description value)
+    option(${name} ${description} ${value})
+    if(${name})
+        set(${name} 1)
+    else()
+        set(${name} 0)
+    endif()
+endmacro()

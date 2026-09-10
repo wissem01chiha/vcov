@@ -14,14 +14,11 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-#include "stdafx.h"
+#include "CoveragePCH.h"
 
-#include <filesystem>
-
-#include "CppCoverage/HandleInformation.hpp"
-#include "TestCoverageConsole/TestCoverageConsole.hpp"
-#include "Tools/Tool.hpp"
-
+#include "HandleInformation.hpp"
+#include "TestCoverageConsole.hpp"
+#include "Tool.hpp"
 #include "TestTools.hpp"
 
 namespace cov = CppCoverage;

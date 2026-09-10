@@ -16,7 +16,7 @@
 
 #pragma once
 
-#include "VcovExport.h"
+#include "VcovConfig.h"
 
 #ifdef VCOV_EXPORTEXPORT
 #define VCOV_EXPORTEXPORT_DLL __declspec(dllexport)

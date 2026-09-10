@@ -140,5 +140,7 @@ function (vcov_module_add_test_sources module)
         add_test(NAME ${_vcov_source_name} 
                  COMMAND ${_vcov_source_name}
                  WORKING_DIRECTORY "${CMAKE_BINARY_DIR}")
+        set_tests_properties(${_vcov_source_name} PROPERTIES
+            ENVIRONMENT "PATH=$<TARGET_FILE_DIR:${module}>$<SEMICOLON>$ENV{PATH}")
     endforeach()
 endfunction()

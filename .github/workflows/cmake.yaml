@@ -45,3 +45,8 @@ jobs:
         run: >
           cmake --build build/${{ matrix.os }}-${{ matrix.platform }}-${{ matrix.configuration }}
           --config ${{ matrix.configuration }}
+
+      - name: Test
+        shell: powershell
+        run: >
+          ctest -C ${{ matrix.configuration }} --output-on-failure  

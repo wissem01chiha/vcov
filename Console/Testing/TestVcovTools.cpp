@@ -15,13 +15,9 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "OpenCppCoverageTestTools.hpp"
-#include "stdafx.h"
-
 #include <Poco/Pipe.h>
 #include <Poco/PipeStream.h>
 #include <Poco/Process.h>
-#include <filesystem>
-
 #include "CppCoverage/ExportOptionParser.hpp"
 #include "CppCoverage/OptionsParser.hpp"
 #include "CppCoverage/ProgramOptions.hpp"
