@@ -1,5 +1,4 @@
 // CppCoverageConsole.cpp : Defines the entry point for the console application.
-//
 
 // OpenCppCoverage is an open source code coverage for C++.
 // Copyright (C) 2014 OpenCppCoverage

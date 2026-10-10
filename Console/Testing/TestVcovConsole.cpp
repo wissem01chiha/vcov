@@ -14,23 +14,16 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-#include "stdafx.h"
-
-#include <Windows.h>
 #include <boost/algorithm/string/predicate.hpp>
-#include <filesystem>
-
 #include "CppCoverage/ExportOptionParser.hpp"
 #include "CppCoverage/FilterAssistant.hpp"
 #include "CppCoverage/OptionsParser.hpp"
 #include "CppCoverage/ProgramOptions.hpp"
 #include "OpenCppCoverage/OpenCppCoverage.hpp"
 #include "TestCoverageConsole/TestCoverageConsole.hpp"
-
 #include "TestHelper/TemporaryPath.hpp"
 #include "Tools/ScopedAction.hpp"
 #include "Tools/Tool.hpp"
-
 #include "OpenCppCoverageTestTools.hpp"
 
 namespace fs  = std::filesystem;
