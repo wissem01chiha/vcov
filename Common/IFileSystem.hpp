@@ -18,7 +18,6 @@
 
 #include "CommonExport.h"
 #include "CommonPCH.h"
-#include <ctime>
 
 namespace CppCoverage
 {

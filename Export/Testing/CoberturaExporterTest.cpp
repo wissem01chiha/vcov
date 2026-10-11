@@ -1,4 +1,18 @@
-// OpenCppCoverage is an open source code coverage for C++.
+// Copyright (C) 2026 Vcov contributors 
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 // Copyright (C) 2014 OpenCppCoverage
 //
 // This program is free software: you can redistribute it and/or modify
@@ -95,15 +109,15 @@ namespace ExporterTest
     TEST(CoberturaExporterTest, SpecialChars)
     {
         Plugin::CoverageData coverageData{ L"", 0 };
-        coverageData.AddModule(L"éà").AddFile(L"éà").AddLine(0, true);
+        coverageData.AddModule(L"ï¿½ï¿½").AddFile(L"ï¿½ï¿½").AddLine(0, true);
 
         std::wostringstream ostr;
         Exporter::CoberturaExporter().Export(coverageData, ostr);
         auto result = ostr.str();
 
-        auto packageName = Tools::LocalToWString(u8"package name=\"éà\"");
-        auto name        = Tools::LocalToWString(u8"class name=\"éà\"");
-        auto filename    = Tools::LocalToWString(u8"filename=\"éà\"");
+        auto packageName = Tools::LocalToWString(u8"package name=\"ï¿½ï¿½\"");
+        auto name        = Tools::LocalToWString(u8"class name=\"ï¿½ï¿½\"");
+        auto filename    = Tools::LocalToWString(u8"filename=\"ï¿½ï¿½\"");
 
         ASSERT_TRUE(boost::algorithm::contains(result, packageName));
         ASSERT_TRUE(boost::algorithm::contains(result, name));

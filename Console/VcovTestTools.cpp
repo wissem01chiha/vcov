@@ -1,4 +1,18 @@
-// OpenCppCoverage is an open source code coverage for C++.
+// Copyright (C) 2026 Vcov contributors 
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 // Copyright (C) 2014 OpenCppCoverage
 //
 // This program is free software: you can redistribute it and/or modify
@@ -14,18 +28,18 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-#include "OpenCppCoverageTestTools.hpp"
+#include "VcovTestTools.hpp"
 #include <Poco/Pipe.h>
 #include <Poco/PipeStream.h>
 #include <Poco/Process.h>
-#include "CppCoverage/ExportOptionParser.hpp"
-#include "CppCoverage/OptionsParser.hpp"
-#include "CppCoverage/ProgramOptions.hpp"
-#include "Tools/Tool.hpp"
+#include "ExportOptionParser.hpp"
+#include "OptionsParser.hpp"
+#include "ProgramOptions.hpp"
+#include "Tool.hpp"
 
 namespace cov = CppCoverage;
 
-namespace OpenCppCoverageTest
+namespace VcovTest
 {
     //---------------------------------------------------------------------
     void AddDefaultFilters(std::vector<std::pair<std::string, std::string>>& coverageArguments,
@@ -102,4 +116,4 @@ namespace OpenCppCoverageTest
     {
         return std::filesystem::canonical(SOLUTION_DIR).filename().string();
     }
-} // namespace OpenCppCoverageTest
+} // namespace VcovTest

@@ -32,3 +32,6 @@ VSPackage/OpenCppCoverage-x86
 CoverageData.pb.h
 CoverageData.pb.cc
 
+# CppDepend files
+vcov.cdproj
+CppDependOut/

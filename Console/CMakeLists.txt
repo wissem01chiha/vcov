@@ -6,6 +6,15 @@ set(headers
     ConsoleExport.h
 )
 
+if(VCOV_BUILD_TESTS)
+    list(APPEND classes
+        VcovTestTools.cpp
+    )
+    list(APPEND headers
+        VcovTestTools.hpp
+    )
+endif()
+
 vcov_module_add_module(Console CLASSES ${classes} HEADERS ${headers})
 vcov_module_add_dependencies(Console
     DEPENDENCIES 
