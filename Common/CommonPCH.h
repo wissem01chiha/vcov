@@ -1,4 +1,4 @@
-// Copyright (C) 2026 Vcov contributors 
+// Copyright (C) 2026 Vcov contributors
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -32,7 +32,8 @@
 
 #include "VcovConfig.h"
 
-#define WIN32_LEAN_AND_MEAN // Exclude rarely-used stuff from Windows headers
+// Exclude rarely-used stuff from Windows headers
+#define WIN32_LEAN_AND_MEAN 
 // Windows Header Files:
 #include <windows.h>
 
@@ -44,10 +45,17 @@
 #include <tchar.h>
 #include <vector>
 #include <iosfwd>
+#include <exception>
+#include <sstream>
+#include <string>
 #include <set>
+#include <codecvt>
+#include <system_error>
 #include <iostream>
 #include <functional>
 #include <ctime>
+#include <random>
+#include <DbgHelp.h>
 
 // Boost Headers
 #include <boost/log/sources/global_logger_storage.hpp>
@@ -62,6 +70,11 @@
 #include <boost/optional/optional.hpp>
 #include <boost/algorithm/string.hpp>
 #include <boost/iostreams/device/mapped_file.hpp>
+
+// Poco Headers
+#include <Poco/Pipe.h>
+#include <Poco/PipeStream.h>
+#include <Poco/Process.h>
 
 #if VCOV_BUILD_TESTS
 #include <gmock/gmock.h>

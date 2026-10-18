@@ -1,4 +1,4 @@
-// Copyright (C) 2026 Vcov contributors 
+// Copyright (C) 2026 Vcov contributors
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -31,9 +31,7 @@
 #pragma once
 
 #include "CommonExport.h"
-#include <exception>
-#include <sstream>
-#include <string>
+#include "CommonPCH.h"
 
 #pragma warning(push)
 // #pragma warning(disable: 4275) // warning C4275: non dll-interface class

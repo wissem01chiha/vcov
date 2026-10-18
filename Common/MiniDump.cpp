@@ -1,5 +1,19 @@
-// OpenCppCoverage is an open source code coverage for C++.
-// Copyright (C) 2020 OpenCppCoverage
+// Copyright (C) 2026 Vcov contributors
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+// Copyright (C) 2014 OpenCppCoverage
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -44,7 +58,7 @@ namespace Tools
         {
             std::wcerr << "\tMemory dump created successfully: " << dmpFilename << std::endl;
             std::wcerr << "\tPlease create a new issue on ";
-            std::wcerr << "https://github.com/OpenCppCoverage/OpenCppCoverage/issues "
+            std::wcerr << "https://github.com/wissem01chiha/vcov/issues"
                           "and attached the memory dump ";
             std::wcerr << dmpFilename << std::endl;
         }

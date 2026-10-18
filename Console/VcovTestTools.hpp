@@ -1,4 +1,4 @@
-// Copyright (C) 2026 Vcov contributors 
+// Copyright (C) 2026 Vcov contributors
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -33,10 +33,10 @@
 #include "ConsolePCH.h"
 
 namespace VcovTest
-{   
+{
     const std::filesystem::path& SOLUTION_DIR = std::filesystem::u8path("../../");
-    const std::filesystem::path& OUT_DIR = std::filesystem::u8path("../../bin/Debug/");
-    std::string GetSolutionFolderName();
+    const std::filesystem::path& OUT_DIR      = std::filesystem::u8path("../../bin/Debug/");
+    std::string                  GetSolutionFolderName();
 
     void AddDefaultFilters(std::vector<std::pair<std::string, std::string>>& coverageArguments,
                            const std::filesystem::path&                      programToRun);

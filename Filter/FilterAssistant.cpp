@@ -1,4 +1,4 @@
-// Copyright (C) 2026 Vcov contributors 
+// Copyright (C) 2026 Vcov contributors
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -32,9 +32,6 @@
 #include "IFileSystem.hpp"
 #include "ProgramOptions.hpp"
 #include "Tool.hpp"
-
-#include <filesystem>
-#include <memory>
 
 namespace CppCoverage
 {

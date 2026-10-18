@@ -1,4 +1,4 @@
-// Copyright (C) 2026 Vcov contributors 
+// Copyright (C) 2026 Vcov contributors
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -135,7 +135,7 @@ namespace CppCoverage
         {
             THROW(L"Vcov cannot find the name of the module.\n"
                   L"See "
-                  L"https://github.com/OpenCppCoverage/OpenCppCoverage/wiki/"
+                  L"https://github.com/wissem01chiha/vcov/wiki"
                   L"FAQ#error-opencppcoverage-cannot-find-the-name-of-the-"
                   L"module for more information.");
         }

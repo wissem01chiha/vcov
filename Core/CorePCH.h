@@ -1,4 +1,4 @@
-// Copyright (C) 2026 Vcov contributors 
+// Copyright (C) 2026 Vcov contributors
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -32,6 +32,10 @@
 
 // Windows Header Files:
 #include <windows.h>
+
+#include <atlbase.h>
+#include <dia2.h>
+#include <diacreate.h>
 
 // STL Headers
 #include <filesystem>

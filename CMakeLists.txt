@@ -59,7 +59,6 @@ vcov_option(VCOV_UBSAN "Enable UndefinedBehaviorSanitizer (UBSan)" OFF)
 
 include(Module)
 include(Sanitizer)
-include(GNUInstallDirs)
 if(VCOV_BUILD_TESTS)
     include(CTest)
     include(Testing)

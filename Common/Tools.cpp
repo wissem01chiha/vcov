@@ -18,10 +18,7 @@
 
 #include "Tools.hpp"
 #include "Tool.hpp"
-#include <Poco/Pipe.h>
-#include <Poco/PipeStream.h>
-#include <Poco/Process.h>
-#include <fstream>
+
 
 namespace fs = std::filesystem;
 

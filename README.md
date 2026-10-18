@@ -13,7 +13,7 @@ Since the original project is no longer actively maintained, Vcov continues its 
 
 Its primary use case is unit test coverage, but it can also be used to track executed lines in a program for debugging purposes.
 
-This tool is constantly evolving, and contributions are always welcome! Learn how to get started with our [packaging tutorial]() and [maintainer guide]().
+This tool is constantly evolving, and contributions are always welcome! Learn how to get started with our [packaging tutorial]() and [maintainer guide](./CONTRIBUTING.md).
 
 ## Get Started
 
@@ -37,7 +37,7 @@ You can also have a look at [Command-line reference](https://github.com/OpenCppC
 
 ## Key features
 
-- [Visual studio support]()  Support compiler with [program database file](https://learn.microsoft.com/en-us/visualstudio/debugger/debug-interface-access/querying-the-dot-pdb-file?view=visualstudio)
+- [Visual studio support](https://visualstudio.microsoft.com/)  Support compiler with [program database file](https://learn.microsoft.com/en-us/visualstudio/debugger/debug-interface-access/querying-the-dot-pdb-file?view=visualstudio)
 - [Non intrusive]()  Just run your program with vccov, no need to recompile your application.
 - [HTML reporting]()
 - [Line coverage]().

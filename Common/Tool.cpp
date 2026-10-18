@@ -1,4 +1,4 @@
-// Copyright (C) 2026 Vcov contributors 
+// Copyright (C) 2026 Vcov contributors
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -31,8 +31,6 @@
 #include "Tool.hpp"
 #include "Log.hpp"
 #include "ToolsException.hpp"
-#include <codecvt>
-#include <system_error>
 
 namespace fs = std::filesystem;
 

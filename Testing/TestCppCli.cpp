@@ -1,4 +1,4 @@
-// Copyright (C) 2026 Vcov contributors 
+// Copyright (C) 2026 Vcov contributors
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -29,7 +29,6 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #include "TestCppCli.hpp"
-#include "stdafx.h"
 
 namespace TestCoverageSharedLib
 {

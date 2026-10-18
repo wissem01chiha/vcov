@@ -1,0 +1,106 @@
+set(NAME "Filter")
+set(VERSION_NUMBER "1.0.0")
+set(LIBRARY_NAME "VcovFilter")
+
+set(BRIEF_DESCRIPTION "Coverage Filtering Module")
+set(DESCRIPTION "Coverage Filtering Module for source analysis")
+
+set(SPDX_LICENSE_IDENTIFIER "")
+set(SPDX_COPYRIGHT_TEXT "")
+set(SPDX_CUSTOM_LICENSE_FILE "")
+set(SPDX_CUSTOM_LICENSE_NAME "")
+set(LICENSE_FILES "")
+set(MAINTAINERS "")
+set(AUTHORS "")
+
+set(CLASSES
+    CoverageFilterManager.cpp
+    CoverageFilterSettings.cpp
+    FilterAssistant.cpp
+    UnifiedDiffCoverageFilterManager.cpp
+    WildcardCoverageFilter.cpp
+    AmbiguousPathException.cpp
+    File.cpp
+    LineFilter.cpp
+    PathMatcher.cpp
+    ReleaseCoverageFilter.cpp
+    RelocationsExtractor.cpp
+    UnifiedDiffCoverageFilter.cpp
+    UnifiedDiffParser.cpp
+    UnifiedDiffParserException.cpp
+)
+
+set(HEADERS
+    CoverageFilterManager.hpp
+    CoverageFilterSettings.hpp
+    ICoverageFilterManager.hpp
+    FilterAssistant.hpp
+    UnifiedDiffCoverageFilterManager.hpp
+    WildcardCoverageFilter.hpp
+    AmbiguousPathException.hpp
+    File.hpp
+    FileFilterException.hpp
+    FileInfo.hpp
+    IRelocationsExtractor.hpp
+    LineFilter.hpp
+    LineInfo.hpp
+    ModuleInfo.hpp
+    PathMatcher.hpp
+    ReleaseCoverageFilter.hpp
+    RelocationsExtractor.hpp
+    UnifiedDiffCoverageFilter.hpp
+    UnifiedDiffParser.hpp
+    UnifiedDiffParserException.hpp
+    FilterExport.h
+)
+
+set(EXECUTABLES "")
+set(EXECUTABLES_DEPENDS "")
+
+set(INTERFACES "")
+set(EXTERNAL_INCLUDE_DIRS "")
+set(INCLUDE_DIRS "")
+
+set(ENABLE_CONFIG_HEADERS ON)
+set(CONFIG_HEADERS "")
+
+set(ENABLE_PCH_HEADERS ON)
+set(PCH_HEADERS "")
+
+set(DEPENDENCIES "")
+set(PRIVATE_DEPENDENCIES "")
+
+set(TEST_DEPENDS "")
+set(TEST_INCLUDE_DIRS "")
+set(TEST_SOURCE_DIR "Testing")
+set(TEST_SOURCES
+    Testing/FileFilterTest.cpp
+)
+
+set(ENABLE_BUILD ON)
+set(BUILD_SHARED ON)
+set(BUILD_STATIC OFF)
+
+set(ENABLE_TESTS ON)
+set(ENABLE_COVERAGE OFF)
+
+set(DATA_SOURCE_DIR "")
+set(DATA_SOURCES "")
+
+set(INSTALL_LIBRRAY ON) 
+set(INSTALL_EXCUTABLES ON)
+
+set(INSTALL_HEADERS ${HEADERS})
+set(INSTALL_TARGETS ${LIBRARY_NAME})
+
+set(EXPORT_NAME "FilterTargets")
+set(NAMESPACE "Filter::")
+
+set(CXX_STANDARD 17)
+set(CXX_STANDARD_REQUIRED ON)
+
+option(ENABLE_SANITIZERS "Enable sanitizers" OFF)
+option(ENABLE_WARNINGS_AS_ERRORS "Treat warnings as errors" OFF)
+
+
+set(DOXYGEN_INPUT ${HEADERS} ${CLASSES})
