@@ -30,6 +30,9 @@
 
 #include "HtmlFile.hpp"
 
+#pragma warning(push)
+#pragma warning(disable: 4251)
+
 namespace Exporter
 {
     //-------------------------------------------------------------------------
@@ -50,3 +53,5 @@ namespace Exporter
         return relativeLinkPath_;
     }
 } // namespace Exporter
+
+#pragma warning(pop)

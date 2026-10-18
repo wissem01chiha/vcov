@@ -37,7 +37,7 @@ function (vcov_module_add_module name)
             DbgHelp.lib
         )
         if(BUILD_SHARED_LIBS)
-            target_link_libraries(${name} PRIVATE Poco::Foundation)
+            target_link_libraries(${name} PUBLIC Poco::Foundation)
         endif()
         if(VCOV_BUILD_TESTS)
             target_link_libraries(${name} PUBLIC Testing)

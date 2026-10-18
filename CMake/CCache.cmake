@@ -1,0 +1,11 @@
+find_program(CCACHE_PROGRAM ccache)
+if(CCACHE_PROGRAM)
+    # Support Unix Makefiles and Ninja
+    if(CMAKE_GENERATOR MATCHES "Ninja|Makefiles")
+        set(CMAKE_C_COMPILER_LAUNCHER "${CCACHE_PROGRAM}")
+        set(CMAKE_CXX_COMPILER_LAUNCHER "${CCACHE_PROGRAM}")
+        message(STATUS "Using ccache: ${CCACHE_PROGRAM}")
+    endif()
+else()
+    message(WARNING "Could not enable ccache: ccache executable not found")
+endif()

@@ -1,3 +1,4 @@
+include(CMakePackageConfigHelpers)
 include(GNUInstallDirs)
 include(CPack)
 

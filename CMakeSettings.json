@@ -4,7 +4,6 @@
         {
             "buildRoot": "${projectDir}\\build\\${name}",
             "cmakeCommandArgs": "",
-            "cmakeGeneratorPlatform": "x64",
             "cmakeToolchain":
                 "C:/Program Files/Microsoft Visual Studio/18/Community/VC/vcpkg/scripts/buildsystems/vcpkg.cmake",
             "configurationType": "Debug",
@@ -12,9 +11,9 @@
             "inheritEnvironments": [
                 "msvc_x64"
             ],
-            "generator": "Visual Studio 17 2022",
+            "generator": "Ninja",
             "installRoot": "${projectDir}\\build\\install\\${name}",
-            "name": "x64-Debug",
+            "name": "Ninja-x64-Debug",
             "buildCommandArgs": ""
         }
     ]
